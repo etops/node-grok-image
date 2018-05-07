@@ -1,0 +1,11 @@
+*.o
+*.so
+*.1
+grok_capture_xdr.*
+grok_version.h
+*.gem
+test.grok
+discogrok
+grok.spec
+VERSION
+test/*.test

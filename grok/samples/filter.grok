@@ -1,0 +1,16 @@
+program {
+  load-patterns: "patterns/nectar-position-falcon"
+  exec "echo \"______\""
+
+  match {
+    pattern: "___%{POSITIONLINE1}___"
+    reaction: "%{@JSON}"
+  }
+
+  no-match {
+    reaction: "\"ERROR: failed\""
+    shell: "stdout"
+    flush: yes
+  }
+
+}
